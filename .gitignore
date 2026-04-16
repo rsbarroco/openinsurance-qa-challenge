@@ -1,0 +1,19 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+.DS_Store
+.idea/
+.vscode/
+*.egg-info/
+.coverage
+htmlcov/
+
+# Internal files — must not ship to candidates
+docs/SCORING_RUBRIC_INTERNAL.md
+docextract-qa-challenge-spec.md
