@@ -39,5 +39,5 @@
     ],
     "description_of_operations": "Third-party logistics services — warehousing, pick-and-pack, and LTL transportation. Certificate holder named as additional insured on GL and auto per written contract between Harbor Logistics Group LLC and Atlantic Storage Trust dated 2022-08-15."
   },
-  "notes": "Older ACORD 25 (2010/05) layout. Raw text uses legacy limit labels (e.g., 'BI/PD Combined' in lieu of modern occurrence/aggregate split) — candidate's extraction pipeline must canonicalize to the modern field names. Coverages list has exactly 3 entries; any 'cyber' coverage line in extraction output is hallucinated and must be rejected by precision checks."
+  "notes": "Older ACORD 25 (2010/05) layout. Raw text uses legacy limit labels (e.g., 'BI/PD Combined' in lieu of modern occurrence/aggregate split) — the extraction pipeline must canonicalize to the modern field names. Coverages list has exactly 3 entries; any 'cyber' coverage line in extraction output is hallucinated and must be rejected by precision checks."
 }

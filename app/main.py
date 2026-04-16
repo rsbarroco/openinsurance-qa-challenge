@@ -49,7 +49,7 @@ class ExtractRequest(BaseModel):
 # --- Carrier canonicalization -----------------------------------------------
 
 # The service occasionally emits the short or marketing form of a carrier
-# name instead of the full legal entity form. Candidates should expect to
+# name instead of the full legal entity form. Downstream consumers should
 # canonicalize before comparison.
 _CARRIER_VARIANTS: dict[str, list[str]] = {
     "Hartford Financial Services": ["Hartford Financial Services", "The Hartford", "Hartford"],
@@ -479,7 +479,7 @@ def _load_ground_truth(document_id: str) -> dict:
 _rate_limit_state: dict[str, deque[float]] = defaultdict(deque)
 
 # Routes subject to operational noise. /health and /config are exempt so
-# candidates can always introspect the service.
+# operators can always introspect the service.
 _NOISE_ROUTES = {"/extract"}
 
 
