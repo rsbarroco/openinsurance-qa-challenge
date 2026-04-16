@@ -6,7 +6,7 @@
 
 You were paged at **03:14 UTC** on 2026-04-12 with the alert below. The model team wants to ship a hotfix to production today. The CTO wants to know by 11:00 ET whether they can.
 
-This file is part of the take-home. Treat it as a real incident: walk through your investigation in your submission (`docs/INCIDENT_RESPONSE.md` — create it). What you'd look at, in what order, what you'd ship as a remediation, and what the post-mortem would say. We're more interested in *how* you think than in landing on a specific answer.
+Treat this as a real incident. Walk through your investigation in `docs/INCIDENT_RESPONSE.md` (create it). What you'd look at, in what order, what you'd ship as a remediation, and what the post-mortem would say.
 
 ---
 

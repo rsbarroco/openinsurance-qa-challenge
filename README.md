@@ -1,10 +1,8 @@
-# DocExtract QA Challenge
+# DocExtract Eval Harness
 
-## Who this is for
+## Overview
 
-This exercise is for senior / staff QA engineers (~10 years). The bar is not "can you write tests that catch bugs" — it's "can you design the eval system, the on-call workflow, and the production safeguards for an LLM-backed extraction pipeline." The bug-finding part is table stakes.
-
-If you're earlier in your career, talk to the recruiter about a different version of this exercise.
+You're building the eval and quality infrastructure for a production document extraction pipeline. The system ingests insurance documents (PDFs) and uses an LLM to extract structured data. Your job is to design the eval framework, define what "correct" means, and build the operational safeguards that keep this pipeline trustworthy in production.
 
 ## What you're looking at
 
@@ -93,7 +91,7 @@ Both "handle the noise" and "turn it off and explain why" are valid choices.
 
 ## Your deliverables
 
-You have **3 hours**. We value scoping and judgment over completeness — a focused submission that covers 3–4 deliverables thoroughly will beat a superficial pass at all 6.
+We value scoping and judgment over completeness — a focused submission that covers 3–4 deliverables thoroughly will beat a superficial pass at all 6.
 
 ### 1. Eval framework (code, in `tests/` and/or `eval/`)
 
@@ -139,6 +137,3 @@ Use whatever tools help you ship good work. AI coding tools encouraged. Note wha
 
 Bug counts are *not* a primary axis at this level. Finding 6 of 10 vs 8 of 10 isn't the signal. *Which* you prioritized and how you reasoned about it is.
 
-## Submission
-
-Zip your work and email back to the hiring contact, or push to a private GitHub repo and share access.

@@ -1,4 +1,4 @@
-"""Starter conftest for the DocExtract QA challenge.
+"""Starter conftest for the DocExtract eval harness.
 
 Add shared fixtures here (e.g., a FastAPI TestClient, ground-truth loaders,
 helpers for running N extractions per document). The repo ships with this
