@@ -137,3 +137,42 @@ Use whatever tools help you ship good work. AI coding tools encouraged. Note wha
 
 Bug counts are *not* a primary axis at this level. Finding 6 of 10 vs 8 of 10 isn't the signal. *Which* you prioritized and how you reasoned about it is.
 
+## Submission Notes
+
+This submission includes:
+
+- a reusable evaluation harness under `eval/`
+- multi-seed document and model comparison
+- scoring for field accuracy, schema validity, classification, and invariants
+- written deliverables for rubric, test strategy, incident response, runbook, and golden dataset strategy
+
+Example harness usage:
+
+```bash
+python -m eval.cli \
+  --document-id sov_pacific_realty \
+  --document-id loss_run_libertymutual \
+  --compare-models \
+  --runs 5
+```
+
+Primary documents delivered:
+
+- [docs/EVAL_RUBRIC_TEMPLATE.md](docs/EVAL_RUBRIC_TEMPLATE.md)
+- [docs/TEST_STRATEGY_TEMPLATE.md](docs/TEST_STRATEGY_TEMPLATE.md)
+- [docs/INCIDENT_RESPONSE.md](docs/INCIDENT_RESPONSE.md)
+- [docs/RUNBOOK_TEMPLATE.md](docs/RUNBOOK_TEMPLATE.md)
+- [docs/GOLDEN_DATASET_STRATEGY.md](docs/GOLDEN_DATASET_STRATEGY.md)
+
+## Tools Used
+
+- ChatGPT / Codex:
+  - codebase analysis
+  - eval harness implementation
+  - test drafting
+  - documentation drafting and refinement
+- GitHub CLI:
+  - branch push and pull request workflow
+- FastAPI TestClient / pytest:
+  - local validation of the framework and seeded regression scenarios
+
