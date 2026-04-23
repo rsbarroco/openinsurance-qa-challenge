@@ -1,42 +1,3 @@
-# DocExtract Eval Working Brief
-
-## Purpose
-
-This file is the working context for the take-home submission. It captures:
-
-- what the company asked for;
-- what this repository actually contains;
-- what has already been discovered from the codebase;
-- what assumptions must remain true while building the solution;
-- what needs to be explainable later in the debrief meeting.
-
-## Submission Constraints
-
-Source of truth: recruiter email + repository README.
-
-- Repository to work from: `https://github.com/Vishalopeninsurance/docextract-eval`
-- Submission format:
-  - push the work to a public GitHub repository;
-  - reply by email with the repo link;
-  - attach the completed docs directly in the email reply.
-- Deadline written in the email: `Thursday, April 23rd at 9:00 PM EST`
-- Important clarification to keep in mind:
-  - April in the US is typically daylight saving time, so if timing becomes tight, confirm whether they meant `ET/EDT` operationally. Do not assume the timezone wording in the email is precise.
-
-## What This Repository Is Testing
-
-This is not a "find the bug" exercise. It is a judgment exercise.
-
-The challenge is evaluating whether the candidate can act like the first serious quality owner for an AI-backed extraction system.
-
-Core themes:
-
-- define correctness for structured extraction, not just test endpoints;
-- distinguish variance, bias, and calibration failures;
-- handle ambiguous truth, partial truth, and missing truth;
-- design something usable by another on-call engineer at 3am;
-- think in terms of scale, cost, CI runtime, and rollout risk.
-
 ## Repo Facts
 
 - App: FastAPI mock extraction service under `app/`
@@ -321,20 +282,6 @@ Implication for submission:
 - push the work to a separate public submission repository;
 - do not push back to the upstream challenge repository.
 
-## First Commit Recommendation
-
-The first public commit should establish structure and intent cleanly.
-
-Recommended first commit contents:
-
-- working brief / planning artifact
-- initial eval framework scaffolding
-- document templates replaced with first pass content only if already coherent
-
-Recommended first commit message:
-
-- `chore: add eval brief and submission scaffolding`
-
 ## Debrief Talking Points
 
 When explaining the final solution later, make sure the narrative is:
@@ -356,9 +303,15 @@ Completed:
 - service-code review
 - ground-truth caveat review
 - git and GitHub CLI readiness check
+- eval harness implementation
+- harness CLI implementation
+- evaluation tests
+- eval rubric
+- test strategy
+- incident response
+- runbook
+- golden dataset strategy
 
 Not started yet:
 
-- code implementation of the eval harness
-- replacement of the deliverable docs
-- creation of submission repo / first push
+- optional README polishing / submission email packaging
