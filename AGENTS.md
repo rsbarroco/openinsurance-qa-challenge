@@ -23,25 +23,6 @@ Source of truth: recruiter email + repository README.
 - Important clarification to keep in mind:
   - April in the US is typically daylight saving time, so if timing becomes tight, confirm whether they meant `ET/EDT` operationally. Do not assume the timezone wording in the email is precise.
 
-## Role Fit Context
-
-Rodrigo is targeting a Founding QA / Test Automation Engineer role in an AI-native insurance infrastructure startup.
-
-What the job description emphasizes:
-
-- ownership of quality across frontend, backend, pipelines, and AI/LLM outputs;
-- building testing and CI/CD foundations from scratch;
-- regression frameworks for model and prompt drift;
-- correctness in financial / insurance workflows where silent failures are unacceptable;
-- strong bias for startup speed with production rigor.
-
-What Rodrigo's resume already supports well:
-
-- 15+ years in QA/SDET work across finance, insurance-adjacent, enterprise, and data-heavy systems;
-- strong automation background in `Playwright`, `Python`, `TypeScript`, CI/CD, APIs, microservices, SQL;
-- experience building frameworks and operating as a senior embedded quality owner;
-- explicit AI-augmented QA positioning, which is highly aligned with this challenge.
-
 ## What This Repository Is Testing
 
 This is not a "find the bug" exercise. It is a judgment exercise.
@@ -332,11 +313,12 @@ Current repository state:
 - inside a git worktree: yes
 - current branch: `main`
 - current remote `origin`: upstream challenge repo
-- GitHub CLI is installed and authenticated as `rsbarroco`
+- submission should go to a separate public repository, not upstream
 
 Implication for submission:
 
-- before push, the remote should be changed to Rodrigo's public GitHub repo or a new repo should be created and used as a separate remote;
+- keep the upstream remote only as reference;
+- push the work to a separate public submission repository;
 - do not push back to the upstream challenge repository.
 
 ## First Commit Recommendation
@@ -369,7 +351,6 @@ When explaining the final solution later, make sure the narrative is:
 Completed:
 
 - repository read-through
-- job-description and resume alignment review
 - README review
 - incident review
 - service-code review
