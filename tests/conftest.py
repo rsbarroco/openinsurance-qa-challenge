@@ -1,16 +1,11 @@
-"""Starter conftest for the DocExtract eval harness.
+from __future__ import annotations
 
-Add shared fixtures here (e.g., a FastAPI TestClient, ground-truth loaders,
-helpers for running N extractions per document). The repo ships with this
-file intentionally minimal — the test suite is yours to design.
+import pytest
+from fastapi.testclient import TestClient
 
-Example starting point:
+from eval.harness import create_eval_client
 
-    from fastapi.testclient import TestClient
-    import pytest
-    from app.main import app
 
-    @pytest.fixture(scope="session")
-    def client() -> TestClient:
-        return TestClient(app)
-"""
+@pytest.fixture(scope="session")
+def eval_client() -> TestClient:
+    return create_eval_client(disable_noise=True)
